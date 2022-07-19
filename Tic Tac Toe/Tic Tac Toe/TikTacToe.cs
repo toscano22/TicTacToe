@@ -9,6 +9,8 @@ namespace Coding.Exercise
     public class TicTacToe
     {
         private string[,] board = new string[3, 3];
+        private int playCounter = 0;
+        private bool draw = false;
         // private List<int> playedmoves = new List<int>();
 
         public TicTacToe()
@@ -30,6 +32,8 @@ namespace Coding.Exercise
         public void Restart()
         {
             int counter = 1;
+            this.playCounter = 0;
+            this.draw = false;
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
@@ -58,9 +62,17 @@ namespace Coding.Exercise
                     PlayerPlay(player[i - 1]);
                     gameover = Checker();
 
-                    if (gameover)
+                    if (gameover && draw == false)
                     {
+                        GetBoard();
                         Console.WriteLine("Congratulations Player {0} you won!", player[i - 1]);
+                        break;
+                    }
+
+                    if (gameover && draw == true)
+                    {
+                        GetBoard();
+                        Console.WriteLine("It is a draw!");
                         break;
                     }
                 }
@@ -158,6 +170,7 @@ namespace Coding.Exercise
             }
 
             this.board[row, col] = play;
+            this.playCounter++;
 
         }
 
@@ -193,6 +206,16 @@ namespace Coding.Exercise
                 return true;
             if (this.board[0, 2] == this.board[1, 1] && this.board[1, 1] == this.board[2, 0])
                 return true;
+        
+
+            //Draw?
+
+            if (this.playCounter>=9)
+            {
+                this.draw = true;
+                return true;
+            }
+
             return false;
         }
 

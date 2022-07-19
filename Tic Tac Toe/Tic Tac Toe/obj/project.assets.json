@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Francisco\\Repos\\Tic Tac Toe\\Tic Tac Toe\\Tic Tac Toe.csproj",
+      "projectUniqueName": "D:\\Git_Projects\\TicTacToe\\Tic Tac Toe\\Tic Tac Toe\\Tic Tac Toe.csproj",
       "projectName": "Tic Tac Toe",
-      "projectPath": "D:\\Francisco\\Repos\\Tic Tac Toe\\Tic Tac Toe\\Tic Tac Toe.csproj",
+      "projectPath": "D:\\Git_Projects\\TicTacToe\\Tic Tac Toe\\Tic Tac Toe\\Tic Tac Toe.csproj",
       "packagesPath": "C:\\Users\\Francisco\\.nuget\\packages\\",
-      "outputPath": "D:\\Francisco\\Repos\\Tic Tac Toe\\Tic Tac Toe\\obj\\",
+      "outputPath": "D:\\Git_Projects\\TicTacToe\\Tic Tac Toe\\Tic Tac Toe\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Francisco\\AppData\\Roaming\\NuGet\\NuGet.Config",
