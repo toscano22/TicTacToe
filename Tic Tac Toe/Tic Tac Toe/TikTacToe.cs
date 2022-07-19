@@ -15,21 +15,11 @@ namespace Coding.Exercise
 
         public TicTacToe()
         {
-            int counter = 1;
-            for (int i = 0; i < 3; i++)
-            {
-                for (int j = 0; j < 3; j++)
-                {
-                    this.board[i, j] = counter.ToString();
-                    counter++;
-
-                }
-
-            }
+            SetField();
             LaunchGame();
         }
 
-        public void Restart()
+        private void SetField()
         {
             int counter = 1;
             this.playCounter = 0;
@@ -44,6 +34,11 @@ namespace Coding.Exercise
                 }
 
             }
+
+        }
+        private void Restart()
+        {
+            SetField();
             LaunchGame();
         }
 
